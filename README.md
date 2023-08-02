@@ -27,4 +27,4 @@ npm run dev
 
 ### Product Page
 
-![screenshot1](screenshots/screenshot2.png)
+![screenshot2](screenshots/screenshot2.png)
