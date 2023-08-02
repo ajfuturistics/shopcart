@@ -5,7 +5,7 @@ import { FiUser, FiShoppingCart } from "react-icons/fi";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center px-12 my-2">
+    <nav className="flex justify-between items-center px-20 my-2">
       <div>
         <Image
           className="w-40"

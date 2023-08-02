@@ -25,10 +25,13 @@ const Dropdown = () => {
     <li className="flex items-center relative group">
       <span className="mr-1">Categories</span>
       <BsChevronDown />
-      <ul class="absolute bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg">
+      <ul className="absolute bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg">
         {categories &&
           categories.map((category) => (
-            <li key={category.id} class="text-sm hover:bg-slate-100 leading-8">
+            <li
+              key={category.id}
+              className="text-sm hover:bg-slate-100 leading-8"
+            >
               <Link href="/">{category.name}</Link>
             </li>
           ))}

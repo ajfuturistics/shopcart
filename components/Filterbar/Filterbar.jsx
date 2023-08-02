@@ -63,13 +63,13 @@ const Filterbar = () => {
             <option value="70">70% Off</option>
           </select>
         </div>
-        <div className="bg-slate-100 rounded-full px-4 py-2 flex justify-center items-center gap-1">
+        <div className="bg-slate-100 rounded-full px-4 py-2 flex justify-center items-center gap-1 cursor-default">
           <span>All Filters</span>
           <BiSliderAlt size={16} />
         </div>
       </div>
 
-      <div className="flex items-center gap-6 my-10">
+      <div className="flex items-center gap-6 my-10 cursor-default">
         <div className="bg-white border border-black rounded-full px-4 py-2 justify-self-end">
           <select name="offer" id="offer" className="bg-white outline-none">
             <option value="">Sort By</option>
