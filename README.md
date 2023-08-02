@@ -18,3 +18,13 @@ npm install
 
 npm run dev
 ```
+
+# Screenshots
+
+### Product Listing Page
+
+![screenshot1](screenshots/screenshot1.png)
+
+### Product Page
+
+![screenshot1](screenshots/screenshot2.png)
