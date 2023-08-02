@@ -7,7 +7,10 @@ import { RiInboxArchiveLine } from "react-icons/ri";
 
 async function getProductById(productId) {
   const data = await fetch(
-    `https://api.escuelajs.co/api/v1/products/${productId}`
+    `https://api.escuelajs.co/api/v1/products/${productId}`,
+    {
+      cache: "no-store",
+    }
   );
 
   if (!data.ok) {
