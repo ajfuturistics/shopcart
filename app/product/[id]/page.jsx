@@ -11,7 +11,7 @@ async function getProductById(productId) {
   );
 
   if (!data.ok) {
-    throw new Error("Failed to fetch blog");
+    throw new Error("Product not found");
   }
 
   return data.json();
@@ -25,9 +25,11 @@ const Product = async ({ params }) => {
     <section className="px-20 ">
       {/* breadcrums */}
       <div className="flex justify-start items-center gap-2 my-6 font-semibold">
-        <span className="text-slate-400">{data?.category?.name}</span>
+        <span className="text-slate-400">
+          {data?.category?.name || "Unknown"}
+        </span>
         <span className="text-slate-400">/</span>
-        <span className="text-black">{data?.title}</span>
+        <span className="text-black">{data?.title || "Unknown"}</span>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-16">
@@ -35,8 +37,10 @@ const Product = async ({ params }) => {
 
         <div>
           <div className="">
-            <h2 className="text-3xl font-bold my-2">{data?.title}</h2>
-            <p>{data?.description}</p>
+            <h2 className="text-3xl font-bold my-2">
+              {data?.title || "Title not added"}
+            </h2>
+            <p>{data?.description || "Description not added"}</p>
             <StarRating rating={4} totalRatings={216} edit={false} />
           </div>
 
